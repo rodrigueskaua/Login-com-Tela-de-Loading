@@ -1,0 +1,110 @@
+/* Formulário inputs */
+.inputs:focus{
+  transition: 0.2s;
+    box-shadow: 0 0 0 0.2rem #145ea86c;
+    background-color:whitesmoke;
+}
+
+/* Icones */
+.icon i {
+  color: gray;
+}
+.icon:hover {
+  background-color: gray;
+  transition: all 0.5s;
+}
+
+.icon:hover i {
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+/* Caixa de Loading */
+.container {
+  display: none;
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  left: -50%;
+  right: -50%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+  filter: blur(0px);
+}
+
+/* GIF de loading */
+#gif {
+  margin-top: 80px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+/* Texto "Carregando" */
+.carregando {
+  margin-top: 250px;
+  top: 80%;
+  left: 50%;
+}
+
+/* Caracteres */
+.carregando span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: green;
+  display: inline-block;
+  transition: all 0.5s;
+  animation: loading 2s infinite;
+}
+
+/* Atrasando animação para o efeito onda */
+.carregando span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.carregando span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.carregando span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.carregando span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.carregando span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.carregando span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.carregando span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.carregando span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.carregando span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.carregando span:nth-child(10) {
+  animation-delay: 1s;
+}
+
+/* Animação */
+@keyframes loading {
+  0% {
+    color: #c5c5c5;
+    transform: translateY(0);
+  }
+  25% {
+    color: black;
+    transform: translateY(-10px);
+  }
+  100% {
+    color: #c5c5c5;
+    transform: translateY(0);
+  }
+}
