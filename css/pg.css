@@ -1,9 +1,21 @@
+/* Overlay tela de carregamento */
+.overlay{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(75, 72, 72, 0.555);
+  opacity: 1;
+}
+
 /* Formulário inputs */
 .inputs:focus{
   transition: 0.2s;
     box-shadow: 0 0 0 0.2rem #145ea86c;
     background-color:whitesmoke;
 }
+
+
 
 /* Icones */
 .icon i {
@@ -33,7 +45,7 @@
   width: 400px;
   height: 400px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
-  filter: blur(0px);
+  cursor: wait;
 }
 
 /* GIF de loading */
